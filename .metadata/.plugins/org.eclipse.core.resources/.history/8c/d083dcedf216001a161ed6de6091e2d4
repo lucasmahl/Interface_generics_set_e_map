@@ -1,0 +1,22 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// tipo curinga
+		List<?> myObjs = new ArrayList<Object>();
+		List<Integer> muNumber = new ArrayList<Integer>();
+
+		// é possivel atribuir pq é curinga
+		myObjs = muNumber;
+
+		Object obj;
+		Integer x = 10;
+		obj = x;
+
+	}
+
+}

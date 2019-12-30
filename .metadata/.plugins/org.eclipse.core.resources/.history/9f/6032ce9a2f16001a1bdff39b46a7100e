@@ -1,0 +1,27 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		List<Product> lista = new ArrayList<Product>();
+		
+		String path = "c:\\temp\\generics.txt";
+		
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		
+		
+	}
+
+}

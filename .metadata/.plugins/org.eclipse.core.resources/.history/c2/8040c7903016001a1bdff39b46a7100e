@@ -1,0 +1,37 @@
+package application;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		List<Product> lista = new ArrayList<Product>();
+
+		String path = "c:\\temp\\generics.txt";
+
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
+			
+			String linha = br.readLine();
+			
+			while ( linha!=null ) {
+				String[] fields = linha.split(",");
+				
+				
+				lista.add( new Product(fields[0], fields[1]) );
+				linha = br.readLine();
+				
+			}
+			
+		} catch (IOException e) {
+			System.out.println("Erro: " + e.getMessage());
+		}
+
+	}
+
+}

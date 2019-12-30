@@ -1,0 +1,25 @@
+package application;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Set<String> set = new TreeSet<>();
+
+		set.add("TV");
+		set.add("Tablet");
+		set.add("Notebook");
+
+		System.out.println(set.contains("Notebook"));
+
+		//HASHSET NÃO IMPRIME NA ORDEM, TreeSet SIM
+		for (String s : set) {
+			System.out.println(s);
+		}
+	}
+
+}

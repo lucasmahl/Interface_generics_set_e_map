@@ -1,0 +1,21 @@
+package application;
+
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Map<String, Integer> votos = new LinkedHashMap();
+		
+		String path = "c://temp//votos.txt";
+		
+		try {
+			
+		} catch (IOException e) {
+			return "Erro: "+ e.getMessage();
+		}
+	}
+
+}
